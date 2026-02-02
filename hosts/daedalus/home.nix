@@ -5,6 +5,7 @@
   imports = [
     ../../home/common
     ../../home/profiles/development.nix
+    ../../home/profiles/reverse-engineering.nix
     ../../home/modules/firefox
   ];
 

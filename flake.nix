@@ -8,17 +8,28 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ida-pro-overlay = {
+      url = "github:msanft/ida-pro-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       inherit (self) outputs;
 
+      overlays = [
+        inputs.ida-pro-overlay.overlays.default
+      ];
+
       # Helper function to create NixOS system configurations
       mkNixosConfig = { hostname, system }: nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs outputs; };
         modules = [
+          { nixpkgs.overlays = overlays; }
+
           # Global configuration shared across all hosts
           ./hosts/global
 
