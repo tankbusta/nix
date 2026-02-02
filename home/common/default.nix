@@ -15,6 +15,7 @@
     ripgrep
     fd
     jq
+    lshw
   ];
 
   # Let Home Manager install and manage itself
