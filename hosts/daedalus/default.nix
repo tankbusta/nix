@@ -41,8 +41,8 @@
       enableOffloadCmd = true;
     };
 
-		intelBusId = "PCI:0:2:0";
-		nvidiaBusId = "PCI:1:0:0";
+    intelBusId = "PCI:0:2:0";
+    nvidiaBusId = "PCI:1:0:0";
 	};
 
   # Host-specific packages
@@ -52,4 +52,8 @@
   ];
 
   system.stateVersion = "25.11";
+
+  # Dell Fingerprint Reader
+  services.fprintd.enable = true;
+  services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix;
 }

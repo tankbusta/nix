@@ -16,6 +16,7 @@
     fd
     jq
     lshw
+    usbutils
   ];
 
   # Let Home Manager install and manage itself
