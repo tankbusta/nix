@@ -13,6 +13,10 @@
 
   home.stateVersion = "25.11";
 
+  home.language = {
+    time = "en_GB.UTF-8"; # 24 hour
+  };
+
   # Host-specific packages for this user
   home.packages = with pkgs; [
     neofetch

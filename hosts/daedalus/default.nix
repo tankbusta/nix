@@ -56,4 +56,11 @@
   # Dell Fingerprint Reader
   services.fprintd.enable = true;
   services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix;
+
+  # Docker
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+  users.users.cschmitt.extraGroups = [ "docker" ];
 }

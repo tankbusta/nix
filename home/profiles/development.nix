@@ -8,14 +8,21 @@
     gnumake
     nodejs
     python3
+
+    # Go
+    go
+    gopls
+    delve
+    go-tools
   ];
 
   programs.vscode = {
     enable = true;
-    extensions = with pkgs.vscode-extensions; [
+    profiles.default.extensions = with pkgs.vscode-extensions; [
       ms-python.python
       jnoortheen.nix-ide
       anthropic.claude-code
+      golang.go
     ];
   };
 
