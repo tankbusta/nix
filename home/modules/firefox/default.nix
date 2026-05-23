@@ -49,6 +49,18 @@
       # Disable the new tab page.
       NewTabPage = false;
 
+      # Strip sponsored garbage
+      FirefoxHome = {
+        Search = true;
+        TopSites = false;
+        SponsoredTopSites = false;
+        Highlights = false;
+        Pocket = false;
+        SponsoredPocket = false;
+        Snippets = false;
+        Locked = true;
+      };
+
       # Do not offer to save logins.
       OfferToSaveLogins = false;
 
