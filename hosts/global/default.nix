@@ -7,6 +7,7 @@
     ./users.nix
     ./programs.nix
     ./services.nix
+    ./secureboot.nix
   ];
 
 }

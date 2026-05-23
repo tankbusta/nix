@@ -11,6 +11,11 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # SecureBoot via lanzaboote. Requires manual sbctl key generation and
+  # firmware setup-mode enrollment before this will boot. See:
+  # https://github.com/nix-community/lanzaboote/blob/master/docs/getting-started/prepare-your-system.md
+  boot.secureboot.enable = true;
+
   # Networking
   networking.networkmanager.enable = true;
 
