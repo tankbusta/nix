@@ -13,6 +13,11 @@
       url = "github:msanft/ida-pro-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v1.0.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
