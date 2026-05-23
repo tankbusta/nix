@@ -5,7 +5,6 @@
   imports = [
     ../../home/common
     ../../home/profiles/development.nix
-    ../../home/profiles/reverse-engineering.nix
     ../../home/profiles/social.nix
     ../../home/modules/firefox
   ];
@@ -21,7 +20,6 @@
 
   # Host-specific packages for this user
   home.packages = with pkgs; [
-    neofetch
     pkgs.claude-code
   ];
 }

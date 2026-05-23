@@ -25,11 +25,9 @@
   # SSH with 1Password agent
   programs.ssh = {
     enable = true;
-    enableDefaultConfig = false;
-    matchBlocks."*" = {
-      extraOptions = {
-        IdentityAgent = "~/.1password/agent.sock";
-      };
-    };
+    extraConfig = ''
+      Host *
+        IdentityAgent ~/.1password/agent.sock
+    '';
   };
 }

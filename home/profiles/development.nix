@@ -19,7 +19,7 @@
   programs.vscode = {
     enable = true;
     profiles.default.extensions = with pkgs.vscode-extensions; [
-      ms-python.python
+      # ms-python.python  # temporarily disabled - jedi version conflict in nixpkgs
       jnoortheen.nix-ide
       anthropic.claude-code
       golang.go

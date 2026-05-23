@@ -21,7 +21,6 @@
 
   # Host-specific packages for this user
   home.packages = with pkgs; [
-    neofetch
     pkgs.claude-code
   ];
 }

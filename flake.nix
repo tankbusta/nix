@@ -57,6 +57,11 @@
           hostname = "daedalus";
           system = "x86_64-linux";
         };
+        "odyssey" = mkNixosConfig {
+          # Gaming Laptop
+          hostname = "odyssey";
+          system = "x86_64-linux";
+        };
       };
     };
 }
