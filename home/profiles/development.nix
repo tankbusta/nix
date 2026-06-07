@@ -9,12 +9,25 @@
     nodejs
     python3
 
+    # Kubernetes
+    kubectl
+    krew
+    kubelogin-oidc
+    cilium-cli
+    talosctl
+    omnictl
+
     # Go
     go
     gopls
     delve
     go-tools
   ];
+
+  home.sessionPath = [ "${config.home.homeDirectory}/.krew/bin" ];
+  home.file.".kube/config".source = ./kube/lcars-prod.yaml;
+  home.file.".talos/config".source = ./kube/lcars-prod-talosconfig.yaml;
+  home.file.".config/omni/config".source = ./kube/omniconfig.yaml;
 
   programs.vscode = {
     enable = true;

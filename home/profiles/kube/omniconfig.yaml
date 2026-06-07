@@ -1,0 +1,7 @@
+contexts:
+    default:
+        url: https://omni.lcars.tankbusta.com
+        auth:
+            siderov1:
+                identity: cschmitt@tankbusta.net
+context: default

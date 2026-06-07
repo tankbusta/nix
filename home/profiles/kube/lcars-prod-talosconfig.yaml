@@ -1,0 +1,9 @@
+context: omni-lcars-prod
+contexts:
+    omni-lcars-prod:
+        endpoints:
+            - https://omni.lcars.tankbusta.com
+        auth:
+            siderov1:
+                identity: cschmitt@tankbusta.net
+        cluster: lcars-prod

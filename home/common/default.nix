@@ -17,6 +17,7 @@
     jq
     lshw
     usbutils
+    age
   ];
 
   # Let Home Manager install and manage itself
