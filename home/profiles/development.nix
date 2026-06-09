@@ -16,6 +16,7 @@
     cilium-cli
     talosctl
     omnictl
+    fluxcd
 
     # Go
     go
