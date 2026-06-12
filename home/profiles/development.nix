@@ -8,6 +8,7 @@
     gnumake
     nodejs
     python3
+    sops
 
     # Kubernetes
     kubectl
