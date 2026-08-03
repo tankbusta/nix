@@ -3,6 +3,12 @@
 {
 
   services = {
+    tailscale = {
+      enable = true;
+      useRoutingFeatures = "client";
+      openFirewall = true;
+    };
+
     xserver.enable = true;
     displayManager.sddm.enable = true;
     desktopManager.plasma6.enable = true;
