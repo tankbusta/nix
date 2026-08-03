@@ -58,6 +58,24 @@
 
   system.stateVersion = "25.11";
 
+  # Hostile-network
+  my.hardened = {
+    specialisation.enable = true;
+
+    # Also drives the desktop widget's home icon, not just auto-arming.
+    trustedNetworks = [ "Panic At The Cisco" ];
+
+    autoArm.enable = true;
+
+    usb.ipcAllowedUsers = [
+      "root"
+      "cschmitt"
+    ];
+
+    # Set this to a Tailscale node at home to tunnel everything while hardened.
+    # network.exitNode = "daedalus";
+  };
+
   # Docker
   virtualisation.docker.rootless = {
     enable = true;

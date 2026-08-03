@@ -1,0 +1,21 @@
+{
+  "KPackageStructure": "Plasma/Applet",
+  "KPlugin": {
+    "Id": "net.tankbusta.hardened",
+    "Name": "Hardened Mode",
+    "Description": "Shows whether this system is running the hardened configuration",
+    "Icon": "security-high",
+    "Category": "System Information",
+    "License": "MIT",
+    "Version": "1.0",
+    "Authors": [
+      {
+        "Name": "Christopher Schmitt"
+      }
+    ],
+    "EnabledByDefault": true
+  },
+  "X-Plasma-API-Minimum-Version": "6.0",
+  "X-Plasma-NotificationArea": true,
+  "X-Plasma-NotificationAreaCategory": "SystemServices"
+}

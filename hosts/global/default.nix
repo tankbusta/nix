@@ -8,6 +8,7 @@
     ./programs.nix
     ./services.nix
     ./secureboot.nix
+    ./hardened
   ];
 
 }
