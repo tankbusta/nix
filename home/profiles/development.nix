@@ -9,6 +9,7 @@
     nodejs
     python3
     sops
+    remmina
 
     # Kubernetes
     kubectl
@@ -18,6 +19,7 @@
     talosctl
     omnictl
     fluxcd
+    kubernetes-helm
 
     # Go
     go
